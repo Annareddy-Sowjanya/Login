@@ -1,0 +1,16 @@
+<html>
+    <body>
+        <h1>User Details</h1>
+        <p id="res"></p>
+        <script>
+            var data=window.location.search;
+            var params=new URLSearchParams(data);
+            var name=params.get("name");
+            var password=params.get("password");
+
+            var getData="Username:"+name+"<br>";
+                getData+="password:"+password+"<br>";
+            document.getElementById("res").innerHTML=getData;
+        </script>
+    </body>
+</html>
